@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ButtonBarViewCell" customModule="XLPagerTabStrip" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bA-d3-zGi">
+                    <rect key="frame" x="28" y="10" width="44.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenCircle" translatesAutoresizingMaskIntoConstraints="NO" id="moS-PV-YHd">
+                    <rect key="frame" x="17" y="16.5" width="7" height="7"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="7" id="ebz-sZ-IsF"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9l0-7s-6Yy">
+                    <rect key="frame" x="0.0" y="39.5" width="100" height="0.5"/>
+                    <color key="backgroundColor" red="0.87058823529411766" green="0.89803921568627454" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="uNg-wO-0IY"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.027450980390000001" green="0.72549019609999998" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="9l0-7s-6Yy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3dh-Sa-KAG"/>
+                <constraint firstAttribute="trailing" secondItem="9l0-7s-6Yy" secondAttribute="trailing" id="8iW-Ci-ghW"/>
+                <constraint firstItem="moS-PV-YHd" firstAttribute="centerY" secondItem="4bA-d3-zGi" secondAttribute="centerY" id="NDH-24-zae"/>
+                <constraint firstItem="4bA-d3-zGi" firstAttribute="leading" secondItem="moS-PV-YHd" secondAttribute="trailing" constant="4" id="b99-mA-eCz"/>
+                <constraint firstAttribute="bottom" secondItem="9l0-7s-6Yy" secondAttribute="bottom" id="gXa-HW-yMH"/>
+                <constraint firstItem="4bA-d3-zGi" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ieD-81-2kt"/>
+                <constraint firstItem="4bA-d3-zGi" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="pgz-0e-egt"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageView" destination="moS-PV-YHd" id="2DN-tc-AKO"/>
+                <outlet property="label" destination="4bA-d3-zGi" id="Ckx-bG-ZhP"/>
+                <outlet property="separatorView" destination="9l0-7s-6Yy" id="dFn-IK-7Wc"/>
+            </connections>
+            <point key="canvasLocation" x="195" y="559"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="greenCircle" width="7" height="7"/>
+    </resources>
+</document>

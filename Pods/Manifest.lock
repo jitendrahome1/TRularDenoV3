@@ -1,0 +1,43 @@
+PODS:
+  - ACEDrawingView (2.1.0)
+  - Alamofire (4.4.0)
+  - Charts (3.0.1):
+    - Charts/Core (= 3.0.1)
+  - Charts/Core (3.0.1)
+  - GoogleMaps (2.2.0):
+    - GoogleMaps/Maps (= 2.2.0)
+  - GoogleMaps/Base (2.2.0)
+  - GoogleMaps/Maps (2.2.0):
+    - GoogleMaps/Base
+  - GooglePlaces (2.2.0):
+    - GoogleMaps/Base (= 2.2.0)
+  - JTAppleCalendar (6.1.5)
+  - Reqres (2.0.0)
+  - SideMenu (2.3.0)
+  - XLPagerTabStrip (7.0.0)
+
+DEPENDENCIES:
+  - ACEDrawingView
+  - Alamofire
+  - Charts
+  - GoogleMaps
+  - GooglePlaces
+  - JTAppleCalendar
+  - Reqres
+  - SideMenu
+  - XLPagerTabStrip
+
+SPEC CHECKSUMS:
+  ACEDrawingView: 39f36ed8c73d63ea1664ecf1ca7150a700fff513
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  Charts: 0e84f4418e87dad6a9edde221fba37ebb51d3ba7
+  GoogleMaps: 104c418d61ab8a05dff06ed0784c25ea9d37da45
+  GooglePlaces: bca867d5e9da15384c794b945e4226848bc6e9d9
+  JTAppleCalendar: 7fe18d6b7c26b8095f714ff089d4c0cbd9d6a632
+  Reqres: 7027a575c1539c9635ff11ecf04d49cdf30a2f0a
+  SideMenu: 43d092cf615cf472f105c5b9867a21beff9fc269
+  XLPagerTabStrip: 9be80a66c6b7d60306b2c0a6004965016d68f813
+
+PODFILE CHECKSUM: e9ffb49df16b871511a061ff1d6a9f98850f2d1a
+
+COCOAPODS: 1.0.1

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TQCalendarDayCellView" customModule="Trular" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2kv-lZ-rcg">
+                    <rect key="frame" x="0.0" y="0.0" width="50" height="49"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="31" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="md4-ho-lau">
+                    <rect key="frame" x="15.5" y="15" width="19" height="20.5"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jd8-qV-7sc">
+                    <rect key="frame" x="0.0" y="49" width="50" height="1"/>
+                    <color key="backgroundColor" red="0.87058823529999996" green="0.8980392157" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="FdA-oO-lBz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Jd8-qV-7sc" firstAttribute="top" secondItem="2kv-lZ-rcg" secondAttribute="bottom" id="8Lk-Gp-lDi"/>
+                <constraint firstItem="md4-ho-lau" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="E8J-rn-LV8"/>
+                <constraint firstAttribute="trailing" secondItem="2kv-lZ-rcg" secondAttribute="trailing" id="Kdc-zP-y0s"/>
+                <constraint firstAttribute="bottom" secondItem="Jd8-qV-7sc" secondAttribute="bottom" id="OJn-qt-qJG"/>
+                <constraint firstItem="2kv-lZ-rcg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="QB8-nu-M1w"/>
+                <constraint firstItem="md4-ho-lau" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="RkS-ag-VhV"/>
+                <constraint firstItem="2kv-lZ-rcg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="WzT-P6-XLQ"/>
+                <constraint firstAttribute="trailing" secondItem="Jd8-qV-7sc" secondAttribute="trailing" id="t2O-BW-TBu"/>
+                <constraint firstItem="Jd8-qV-7sc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="zZu-mk-W7X"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backgroundView" destination="2kv-lZ-rcg" id="WZl-KU-qFu"/>
+                <outlet property="dayLabel" destination="md4-ho-lau" id="eS4-0x-TyB"/>
+            </connections>
+        </view>
+    </objects>
+</document>
